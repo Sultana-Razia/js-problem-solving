@@ -49,4 +49,21 @@ console.log(totalBricks);
 
 
   
+//tiny Friend
+var friends = ['Mili', 'Ety', 'Rehana', 'Labonno', 'Ritu'];
 
+function tinyFriend(friends){
+    var small = friends[0].length;
+    var smallest;
+    for (var i = 1; i < friends.length; i++){
+        if(friends[i].length < small){
+            small = friends[i].length;
+            smallest = friends[i];
+            
+        }
+    }
+    return smallest;
+}
+
+var myfriend = tinyFriend(friends);
+console.log(myfriend);
